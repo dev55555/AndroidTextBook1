@@ -1,0 +1,2 @@
+作業フォルダ：V:\D\PJ\P_Android\AndroidTextBook1
+作業フォルダをGitのトップにして、その下にプロジェクト毎のフォルダを展開
