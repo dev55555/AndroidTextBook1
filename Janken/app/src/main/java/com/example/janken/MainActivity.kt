@@ -3,6 +3,7 @@ package com.example.janken
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -21,7 +22,14 @@ class MainActivity : AppCompatActivity() {
     fun onJankenButtonTapped(view: View?) {
         val intent = Intent(this, ResultActivity::class.java)
         intent.putExtra("MY_HAND", view?.id)
-        startActivity(intent)
+
+        if( null == intent.resolveActivity(packageManager)) {
+            Log.d("NULL確認", "nullだった")
+        } else {
+            Log.d("NULL確認", "nullではない")
+        }
+
+        this.startActivity(intent)
     }
 
 }

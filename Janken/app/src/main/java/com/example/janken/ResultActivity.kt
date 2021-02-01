@@ -15,7 +15,7 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         // インテントからデータを取り出す
-        val id = intent.getIntExtra("MY_HAND", 0)
+        val id = this.intent.getIntExtra("MY_HAND", 0)
         // 自分の"選択した手"の画像の描画を行う
         val myHand: Int
         myHand = when(id) {
@@ -51,6 +51,6 @@ class ResultActivity : AppCompatActivity() {
         }
 
         // 戻るボタン
-        backButton.setOnClickListener { finish() }
+        backButton.setOnClickListener { this.finish() }
     }
 }
