@@ -3,7 +3,7 @@ package com.example.jankenwithsave
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
+import androidx.preference.PreferenceManager
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     // ボタンを押した時に実行するメソッド
     fun onJankenButtonTapped(view: View?) {
+        // org.jetbrains.anko.startActivityを使用して、1行にした
         startActivity<ResultActivity>("MY_HAND" to view?.id)
     }
 }
