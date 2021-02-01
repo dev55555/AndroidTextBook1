@@ -9,8 +9,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tapHere.setOnClickListener {
-            textView.text = "タップしました。"
+        buttonX.setOnClickListener {
+            textViewX.text = "タップしました。"
         }
 
     }
