@@ -2,7 +2,7 @@ package com.example.mysize
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
+import androidx.preference.PreferenceManager
 import android.view.View
 import android.widget.AdapterView
 import android.widget.RadioButton
@@ -27,9 +27,7 @@ class HeightActivity : AppCompatActivity() {
                     item?.let {
                         if (it.isNotEmpty()) height.text = it
                     }
-
                 }
-
                 override
                 fun onNothingSelected(parent: AdapterView<*>?) {
                 }
