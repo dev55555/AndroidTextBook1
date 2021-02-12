@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ImageView
+import android.widget.ViewSwitcher
+import android.widget.ViewSwitcher.ViewFactory
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.timer
 
@@ -47,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 if (isSlideshow) movePosition(1)
             }
         }
+
         slideshowButton.setOnClickListener {
             isSlideshow = !isSlideshow
         }

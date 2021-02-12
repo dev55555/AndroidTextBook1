@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">パーツを集めたサンプルアプリ</string>
+    <string name="bt_spinner">スピナーアクティビティへ</string>
+    <string name="bt_seekbar">シークバーアクティビティへ</string>
+    <string name="tv_default">テキストビューのデフォルト値</string>
+    <string name="bt_radioGroup">ラジオボタンアクティビティへ</string>
+    <string name="rb_yes">Yes</string>
+    <string name="rb_maybe">Maybe</string>
+    <string name="rb_no">No</string>
+    <string name="bt_sensor">センサーアクティビティへ</string>
+    <string name="bt_slideshow3">スライドショー３アクティビティへ</string>
+    <string name="bt_countdown">カウントダウンアクティビティへ</string>
+    <string name="bt_slideshow">スライドショーアクティビティへ</string>
+    <string name="bt_slideshow2">スライドショーアクティビティ２へ</string>
+    <string name="bt_floatingactionbutton">フローティングアクションボタンへ</string>
+    <string name="tv_play">再生中</string>
+    <string name="tv_stop">停止中</string>
+    <string name="bt_optionMenu">オプションメニューへ</string>
+    <string name="bt_contextMenu">コンテキストメニューへ</string>
+    <string name="bt_home">ホームへ</string>
+</resources>

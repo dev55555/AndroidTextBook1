@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         imageView2.setOnClickListener(View.OnClickListener {
-            val obj : ViewPropertyAnimator = imageView2.animate()
+            val obj : ViewPropertyAnimator = it.animate()
             obj.duration = 3000L
             obj.rotation(360.0f * -2.0f)
         })
@@ -32,5 +32,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
         imageView3.setOnClickListener(listener)
+
     }
 }

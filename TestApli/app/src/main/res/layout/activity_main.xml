@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_radioGroup" />
+
+            <Button
+                android:id="@+id/btFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_floatingactionbutton" />
+
+            <Button
+                android:id="@+id/btSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_spinner" />
+
+            <Button
+                android:id="@+id/btSeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_seekbar" />
+
+            <Button
+                android:id="@+id/btSensor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_sensor" />
+
+            <Button
+                android:id="@+id/btCountDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_countdown" />
+
+            <Button
+                android:id="@+id/btSlideshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_slideshow" />
+
+            <Button
+                android:id="@+id/btSlideshow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_slideshow3" />
+
+            <Button
+                android:id="@+id/btSensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/bt_sensor" />
+
+            <Button
+                android:id="@+id/btOptionMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_optionMenu" />
+
+            <Button
+                android:id="@+id/btContextMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_contextMenu" />
+
+            <Button
+                android:id="@+id/btIntent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="暗黙インテントの例" />
+
+            <Button
+                android:id="@+id/btImageSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="イメージスイッチャーへ" />
+
+            <Button
+                android:id="@+id/btTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="タイマー関数の利用へ" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

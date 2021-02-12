@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_spinner">
+        <item>選択肢１</item>
+        <item>選択肢２</item>
+        <item>選択肢３</item>
+    </string-array>
+</resources>
