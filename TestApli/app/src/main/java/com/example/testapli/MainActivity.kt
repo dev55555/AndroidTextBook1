@@ -27,12 +27,43 @@ class MainActivity : AppCompatActivity() {
                     startActivity<TimerActivity>()
                 }
         )
+        btMediaPlayer.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<MediaPlayerActivity>()
+                }
+        )
         btSlideshow.setOnClickListener(
                 View.OnClickListener {
                     startActivity<SlideshowActivity>()
                 }
         )
-        //
+        // ９章
+        btFloatingActionButton.setOnClickListener(
+            View.OnClickListener {
+                startActivity<FloatingActionButtonActivity>()
+            }
+        )
+        btCountDown.setOnClickListener(
+            View.OnClickListener {
+                startActivity<CountDownActivity>()
+            }
+        )
+        btSoundPool.setOnClickListener(
+            View.OnClickListener {
+                startActivity<SoundPoolActivity>()
+            }
+        )
+        btCountDownApp.setOnClickListener(
+            View.OnClickListener {
+                startActivity<CountDownAppActivity>()
+            }
+        )
+
+
+
+
+
+
 
 
 
@@ -56,11 +87,7 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
-        btFloatingActionButton.setOnClickListener(
-            View.OnClickListener {
-                startActivity<FloatingActionButtonActivity>()
-            }
-        )
+
 
         btSensor.setOnClickListener(
             View.OnClickListener {
@@ -75,12 +102,6 @@ class MainActivity : AppCompatActivity() {
         )
 
 
-
-        btCountDown.setOnClickListener(
-            View.OnClickListener {
-                startActivity<CountDownActivity>()
-            }
-        )
 
         btOptionMenu.setOnClickListener(
             View.OnClickListener {

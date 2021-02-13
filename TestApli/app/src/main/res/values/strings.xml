@@ -8,6 +8,11 @@
     <string name="bt_text_bt5">ボタン５</string>
     <string name="bt_text_bt6">ボタン６</string>
 
+    <string name="bt_start">スタート</string>
+    <string name="bt_stop">ストップ</string>
+    <string name="tv_play">再生中</string>
+    <string name="tv_stop">停止中</string>
+
     <string name="tv_default">テキストビューのデフォルト値</string>
 
     <string name="rb_yes">Yes</string>
@@ -45,17 +50,26 @@
 
     <!-- Text1の８章の部品化と完成アプリ -->
     <string name="tv_chap8">８章の部品化と完成アプリ</string>
-    <string name="bt_ViewPropertyActivity">ViewPropertyActivity</string>
-    <string name="bt_ImageSwitcherActivity">ImageSwitcherActivity</string>
-    <string name="bt_TimerActivity">TimerActivity</string>
-    <string name="bt_SlideShowActivity">SlideShowActivity</string>
+    <!-- ViewProperty -->
+    <string name="bt_ViewPropertyActivity">ViewProperty</string>
+    <!-- ImageSwitcher -->
+    <string name="bt_ImageSwitcherActivity">ImageSwitcher</string>
+
+    <string name="tv_TimerActivity">タイマー処理</string>
+    <string name="bt_TimerActivity">Timer</string>
+
+    <string name="tv_MediaPlayer">音楽の再生</string>
+    <string name="bt_MediaPlayerActivity">MediaPlayer</string>
+
+    <string name="bt_SlideShowApp">SlideShow App</string>
 
     <!-- Text1の９章の部品化と完成アプリ -->
     <string name="tv_chap9">９章の部品化と完成アプリ</string>
-    <string name="tv_play">再生中</string>
-    <string name="tv_stop">停止中</string>
-    <string name="bt_floatingactionbutton">フローティングアクションボタンへ</string>
-    <string name="bt_countdown">カウントダウンタイマーへ</string>
+    <string name="bt_floatingActionButtonActivity">FloatingActionButton</string>
+    <string name="bt_countDownActivity">CountDown</string>
+    <string name="tv_SoundPool">音楽の再生</string>
+    <string name="bt_SoundPoolActivity">SoundPool</string>
+    <string name="bt_countDownApp">CountDownTimer App</string>
 
 
     <!-- Text1の１０章の部品化と完成アプリ -->
@@ -68,10 +82,8 @@
     <string name="tv_chap11">１１章の部品化と完成アプリ</string>
 
 
-
     <!-- Text1の１２章の部品化と完成アプリ -->
     <string name="tv_chap12">１２章の部品化と完成アプリ</string>
-
 
 
 </resources>

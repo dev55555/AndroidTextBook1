@@ -25,6 +25,84 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!-- Text1の８章 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の８章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap8Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap8"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/btViewPropertyAnimator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_ViewPropertyActivity" />
+                <Button
+                    android:id="@+id/btImageSwitcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_ImageSwitcherActivity" />
+                <Button
+                    android:id="@+id/btTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_TimerActivity" />
+                <Button
+                    android:id="@+id/btMediaPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_MediaPlayerActivity" />
+                <!-- Text1の８章のサンプルアプリ -->
+                <Button
+                    android:id="@+id/btSlideshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_SlideShowApp" />
+            </LinearLayout>
+
+            <!-- Text1の９章 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の９章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap9Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap9"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/btFloatingActionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_floatingActionButtonActivity" />
+                <Button
+                    android:id="@+id/btCountDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_countDownActivity" />
+                <Button
+                    android:id="@+id/btSoundPool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_SoundPoolActivity" />
+                <Button
+                    android:id="@+id/btCountDownApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_countDownApp" />
+            </LinearLayout>
+
             <!-- Text1の３章 -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -117,69 +195,7 @@
                     android:text="@string/bt_sensor2" />
             </LinearLayout>
 
-            <!-- Text1の８章 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の８章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap8Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap8"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-                <Button
-                    android:id="@+id/btViewPropertyAnimator"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_ViewPropertyActivity" />
-                <Button
-                    android:id="@+id/btImageSwitcher"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_ImageSwitcherActivity" />
-                <Button
-                    android:id="@+id/btTimer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_TimerActivity" />
-                <!-- Text1の８章のサンプルアプリ -->
-                <Button
-                    android:id="@+id/btSlideshow"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_SlideShowActivity" />
-            </LinearLayout>
 
-            <!-- Text1の９章 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の９章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap9Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap9"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-                <Button
-                    android:id="@+id/btFloatingActionButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_floatingactionbutton" />
-                <Button
-                    android:id="@+id/btCountDown"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/bt_countdown" />
-            </LinearLayout>
 
             <!-- Text1の１０章 -->
             <LinearLayout

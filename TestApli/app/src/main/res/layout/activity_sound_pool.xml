@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimerActivity">
+    tools:context=".MediaPlayerActivity">
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/tv_TimerActivity"
+        android:text="@string/tv_SoundPool"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,25 +36,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt1"
         app:layout_constraintTop_toBottomOf="@+id/tv1" />
-
-    <Button
-        android:id="@+id/bt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/bt_text_bt3"
-        app:layout_constraintEnd_toStartOf="@+id/bt4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt1" />
-
-    <Button
-        android:id="@+id/bt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/bt_start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt3"
-        app:layout_constraintTop_toBottomOf="@+id/bt1" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

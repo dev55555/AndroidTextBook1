@@ -1,34 +1,25 @@
 package com.example.testapli
 
-import android.media.AudioAttributes
-import android.media.AudioManager
-import android.media.SoundPool
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_count_down.*
 
 class CountDownActivity : AppCompatActivity() {
 
-    private lateinit var soundPool: SoundPool
-    private var soundResId = 0
+    val CLASS_NAME_TAG = "CountDownActivity"
 
-    inner class MyCountDownTimer(millisInFuture: Long,
-                                 countDownInterval: Long) :
+    inner class CountDownTimerImpl(millisInFuture: Long, countDownInterval: Long) :
         CountDownTimer(millisInFuture, countDownInterval) {
-
-        var isRunning = false
-
         override fun onTick(millisUntilFinished: Long) {
-            val minute = millisUntilFinished / 1000L / 60L
-            val second = millisUntilFinished / 1000L % 60L
-            timerText.text = "%1d:%2$02d".format(minute, second)
+            Log.d(CLASS_NAME_TAG, "onTick()")
+            tv1.text = "onTick()"
         }
 
         override fun onFinish() {
-            timerText.text = "0:00"
-            soundPool.play(soundResId, 1.0f, 100f, 0, 0, 1.0f)
+            Log.d(CLASS_NAME_TAG, "onFinish()")
+            tv1.text = "onFinish()"
         }
     }
 
@@ -36,46 +27,19 @@ class CountDownActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_count_down)
 
-        timerText.text = "0:10"
-        val timer = MyCountDownTimer(1 * 10 * 1000, 100)
-        playStop.setOnClickListener {
-            when (timer.isRunning) {
-                true -> timer.apply {
-                    isRunning = false
-                    cancel()
-                    playStop.setImageResource(
-                        R.drawable.ic_baseline_play_arrow_24)
-                }
-                false -> timer.apply {
-                    isRunning = true
-                    start()
-                    playStop.setImageResource(
-                        R.drawable.ic_baseline_stop_24)
-                }
-            }
+        // 15秒のカウントダウンを行い、4秒ごとに何かを行う
+        val countDown = CountDownTimerImpl(15000, 4000)
+
+        bt1.setOnClickListener {
+            Log.d(CLASS_NAME_TAG, "start()")
+            tv1.text = "start()"
+            countDown.start()
         }
-    }
 
-    override fun onResume() {
-        super.onResume()
-        soundPool =
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-                @Suppress("DEPRECATION")
-                (SoundPool(2, AudioManager.STREAM_ALARM, 0))
-            } else {
-                val audioAttributes = AudioAttributes.Builder()
-                    .setUsage(AudioAttributes.USAGE_ALARM)
-                    .build()
-                SoundPool.Builder()
-                    .setMaxStreams(1)
-                    .setAudioAttributes(audioAttributes)
-                    .build()
-            }
-        soundResId = soundPool.load(this, R.raw.bellsound, 1)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        soundPool.release()
+        bt2.setOnClickListener {
+            Log.d(CLASS_NAME_TAG, "cancel()")
+            tv1.text = "cancel()"
+            countDown.cancel()
+        }
     }
 }
