@@ -15,9 +15,9 @@
         <activity android:name=".ContextMenuActivity" />
         <activity android:name=".OptionMenuActivity" />
         <activity android:name=".FloatingActionButtonActivity" />
-        <activity android:name=".SlideshowActivity" />
+        <activity android:name=".ViewPropertyActivity" />
         <activity android:name=".CountDownActivity" />
-        <activity android:name=".Slideshow3Activity" />
+        <activity android:name=".SlideshowActivity" />
         <activity android:name=".Sensor2Activity" />
         <activity android:name=".SensorActivity" />
         <activity android:name=".RadioGroupActivity" />

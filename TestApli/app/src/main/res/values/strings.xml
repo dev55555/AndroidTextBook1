@@ -1,21 +1,77 @@
 <resources>
     <string name="app_name">パーツを集めたサンプルアプリ</string>
-    <string name="bt_spinner">スピナーアクティビティへ</string>
-    <string name="bt_seekbar">シークバーアクティビティへ</string>
+    <!-- ボタンのラベル(汎用) -->
+    <string name="bt_text_bt1">ボタン１</string>
+    <string name="bt_text_bt2">ボタン２</string>
+    <string name="bt_text_bt3">ボタン３</string>
+    <string name="bt_text_bt4">ボタン４</string>
+    <string name="bt_text_bt5">ボタン５</string>
+    <string name="bt_text_bt6">ボタン６</string>
+
     <string name="tv_default">テキストビューのデフォルト値</string>
-    <string name="bt_radioGroup">ラジオボタンアクティビティへ</string>
+
     <string name="rb_yes">Yes</string>
     <string name="rb_maybe">Maybe</string>
     <string name="rb_no">No</string>
-    <string name="bt_sensor">センサーアクティビティへ</string>
-    <string name="bt_slideshow3">スライドショー３アクティビティへ</string>
-    <string name="bt_countdown">カウントダウンアクティビティへ</string>
-    <string name="bt_slideshow">スライドショーアクティビティへ</string>
-    <string name="bt_slideshow2">スライドショーアクティビティ２へ</string>
-    <string name="bt_floatingactionbutton">フローティングアクションボタンへ</string>
+    <string name="bt_home">ホームへ</string>
+
+    <!-- Text1の３章の部品化と完成アプリ -->
+    <string name="tv_chap3">３章の部品化と完成アプリ</string>
+
+    <!-- Text1の５章の部品化と完成アプリ -->
+    <string name="tv_chap5">５章の部品化と完成アプリ</string>
+    <!--
+    インテントでの画面遷移
+    共有プリファレンス
+    じゃんけんアプリ
+    -->
+    <!-- Text1の６章の部品化と完成アプリ -->
+    <string name="tv_chap6">６章の部品化と完成アプリ</string>
+    <!--
+    配列リソース
+    体型記録アプリ
+    -->
+    <string name="bt_spinner">スピナーアクティビティへ</string>
+    <string name="bt_seekbar">シークバーアクティビティへ</string>
+    <string name="bt_radioGroup">ラジオボタンアクティビティへ</string>
+
+    <!-- Text1の７章の部品化と完成アプリ -->
+    <string name="tv_chap7">７章の部品化と完成アプリ</string>
+    <!--
+    玉転がしアプリ
+    -->
+    <string name="bt_sensor1">センサーアクティビティへ</string>
+    <string name="bt_sensor2">玉転がしアプリ</string>
+
+    <!-- Text1の８章の部品化と完成アプリ -->
+    <string name="tv_chap8">８章の部品化と完成アプリ</string>
+    <string name="bt_ViewPropertyActivity">ViewPropertyActivity</string>
+    <string name="bt_ImageSwitcherActivity">ImageSwitcherActivity</string>
+    <string name="bt_TimerActivity">TimerActivity</string>
+    <string name="bt_SlideShowActivity">SlideShowActivity</string>
+
+    <!-- Text1の９章の部品化と完成アプリ -->
+    <string name="tv_chap9">９章の部品化と完成アプリ</string>
     <string name="tv_play">再生中</string>
     <string name="tv_stop">停止中</string>
+    <string name="bt_floatingactionbutton">フローティングアクションボタンへ</string>
+    <string name="bt_countdown">カウントダウンタイマーへ</string>
+
+
+    <!-- Text1の１０章の部品化と完成アプリ -->
+    <string name="tv_chap10">１０章の部品化と完成アプリ</string>
     <string name="bt_optionMenu">オプションメニューへ</string>
     <string name="bt_contextMenu">コンテキストメニューへ</string>
-    <string name="bt_home">ホームへ</string>
+
+
+    <!-- Text1の１１章の部品化と完成アプリ -->
+    <string name="tv_chap11">１１章の部品化と完成アプリ</string>
+
+
+
+    <!-- Text1の１２章の部品化と完成アプリ -->
+    <string name="tv_chap12">１２章の部品化と完成アプリ</string>
+
+
+
 </resources>

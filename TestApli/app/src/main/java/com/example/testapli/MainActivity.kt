@@ -10,6 +10,33 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // ８章
+        btViewPropertyAnimator.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<ViewPropertyActivity>()
+                }
+        )
+        btImageSwitcher.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<ImageSwitcherActivity>()
+                }
+        )
+        btTimer.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<TimerActivity>()
+                }
+        )
+        btSlideshow.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<SlideshowActivity>()
+                }
+        )
+        //
+
+
+
+
         //
         btSpinner.setOnClickListener(
             View.OnClickListener {
@@ -47,17 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
-        btSlideshow.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SlideshowActivity>()
-            }
-        )
 
-        btSlideshow3.setOnClickListener(
-            View.OnClickListener {
-                startActivity<Slideshow3Activity>()
-            }
-        )
 
         btCountDown.setOnClickListener(
             View.OnClickListener {
@@ -82,17 +99,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity<Intent2Activity>() }
         )
 
-        btImageSwitcher.setOnClickListener(
-            View.OnClickListener {
-                startActivity<ImageSwitcherActivity>()
-            }
-        )
 
-        btTimer.setOnClickListener(
-            View.OnClickListener {
-                startActivity<TimerActivity>()
-            }
-        )
 
 
     }
