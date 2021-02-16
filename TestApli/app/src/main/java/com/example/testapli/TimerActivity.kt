@@ -25,14 +25,14 @@ class TimerActivity : AppCompatActivity() {
                 // tv1.text = "${tv1.text}＞" // 実行時エラー
             }
         }
-        bt2.setOnClickListener{
+        bt4.setOnClickListener{
             isOn = !isOn
             Log.d("TimerActivity", "isOn:${isOn}")
             timerMonitor.cancel()
             tv1.text = getString(R.string.tv_TimerActivity)
         }
         // タイトル変更のボタン
-        bt3.setOnClickListener{
+        bt4.setOnClickListener{
             tv1.text = "${tv1.text}＞"
         }
 

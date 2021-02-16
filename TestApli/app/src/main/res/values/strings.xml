@@ -69,6 +69,13 @@
     <string name="bt_countDownActivity">CountDown</string>
     <string name="tv_SoundPool">音楽の再生</string>
     <string name="bt_SoundPoolActivity">SoundPool</string>
+
+    <string name="bt_sound1">サウンド１</string>
+    <string name="tv_sound1">サウンド１</string>
+    <string name="bt_sound2">サウンド２</string>
+    <string name="tv_sound2">サウンド２</string>
+    <string name="bt_pause">一時停止</string>
+    <string name="tv_pause">一時停止中</string>
     <string name="bt_countDownApp">CountDownTimer App</string>
 
 

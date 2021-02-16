@@ -23,12 +23,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bt_text_bt1"
-        app:layout_constraintEnd_toStartOf="@+id/bt2"
+        app:layout_constraintEnd_toStartOf="@+id/bt4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageSwitcher" />
 
     <Button
-        android:id="@+id/bt2"
+        android:id="@+id/bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bt_text_bt2"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageSwitcher" />
 
     <Button
-        android:id="@+id/bt3"
+        android:id="@+id/bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -53,7 +53,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/bt_text_bt4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt3"
-        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+        app:layout_constraintStart_toEndOf="@+id/bt4"
+        app:layout_constraintTop_toBottomOf="@+id/bt4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

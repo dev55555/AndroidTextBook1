@@ -28,7 +28,7 @@ class CountDownAppActivity : AppCompatActivity() {
 
         override fun onFinish() {
             timerText.text = "0:00"
-            soundPool.play(soundResId, 1.0f, 100f, 0, 0, 1.0f)
+            soundPool.play(soundResId, 1.0f, 1.0f, 0, 0, 1.0f)
         }
     }
 

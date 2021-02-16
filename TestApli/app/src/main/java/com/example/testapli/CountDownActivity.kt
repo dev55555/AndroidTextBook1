@@ -36,7 +36,7 @@ class CountDownActivity : AppCompatActivity() {
             countDown.start()
         }
 
-        bt2.setOnClickListener {
+        bt4.setOnClickListener {
             Log.d(CLASS_NAME_TAG, "cancel()")
             tv1.text = "cancel()"
             countDown.cancel()

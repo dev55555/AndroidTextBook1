@@ -20,7 +20,7 @@ class MediaPlayerActivity : AppCompatActivity() {
             player.start()
         }
 
-        bt2.setOnClickListener {
+        bt4.setOnClickListener {
             player.apply {
                 pause()
                 seekTo(0)

@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity<SoundPoolActivity>()
             }
         )
+
         btCountDownApp.setOnClickListener(
             View.OnClickListener {
                 startActivity<CountDownAppActivity>()
