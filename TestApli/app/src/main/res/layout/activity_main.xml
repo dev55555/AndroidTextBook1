@@ -104,6 +104,80 @@
                     android:text="@string/bt_countDownApp" />
             </LinearLayout>
 
+            <!-- Text1の１０章 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の１０章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap10Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap10"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+                <Button
+                    android:id="@+id/btOptionMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_optionMenu" />
+                <Button
+                    android:id="@+id/btContextMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_contextMenu" />
+                <Button
+                    android:id="@+id/btIntent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="暗黙インテントの例" />
+            </LinearLayout>
+
+            <!-- Text1の１１章 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の１１章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap11Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap11"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+
+            <!-- Text1の１２章 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の１２章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap12Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap12"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
             <!-- Text1の３章 -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -198,68 +272,8 @@
 
 
 
-            <!-- Text1の１０章 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の１０章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap10Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap10"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-                <Button
-                    android:id="@+id/btOptionMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_optionMenu" />
-                <Button
-                    android:id="@+id/btIntent2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="暗黙インテントの例" />
-                <Button
-                    android:id="@+id/btContextMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_contextMenu" />
-            </LinearLayout>
 
-            <!-- Text1の１１章 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の１１章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap11Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap11"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-            </LinearLayout>
 
-            <!-- Text1の１２章 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の１２章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap12Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap12"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

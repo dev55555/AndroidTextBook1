@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-        <activity android:name=".SoundPool2Activity"></activity>
         <activity android:name=".SoundPoolActivity" />
         <activity android:name=".CountDownActivity" />
         <activity android:name=".MediaPlayerActivity" />

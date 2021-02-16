@@ -60,16 +60,30 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
+        // １０章
+        btOptionMenu.setOnClickListener(
+            View.OnClickListener {
+                startActivity<OptionMenuActivity>()
+            }
+        )
+
+        btContextMenu.setOnClickListener(
+            View.OnClickListener {
+                startActivity<ContextMenuActivity>()
+            }
+        )
+
+        btIntent2.setOnClickListener(
+            View.OnClickListener {
+                startActivity<Intent2Activity>() }
+        )
 
 
 
 
 
 
-
-
-
-        //
+        //以下はまだ未整理
         btSpinner.setOnClickListener(
             View.OnClickListener {
                 startActivity<SpinnerActivity>()
@@ -88,8 +102,6 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
-
-
         btSensor.setOnClickListener(
             View.OnClickListener {
                 startActivity<SensorActivity>()
@@ -104,22 +116,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        btOptionMenu.setOnClickListener(
-            View.OnClickListener {
-                startActivity<OptionMenuActivity>()
-            }
-        )
 
-        btContextMenu.setOnClickListener(
-            View.OnClickListener {
-                startActivity<ContextMenuActivity>()
-            }
-        )
-
-        btIntent2.setOnClickListener(
-            View.OnClickListener {
-                startActivity<Intent2Activity>() }
-        )
 
 
 
