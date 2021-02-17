@@ -149,6 +149,20 @@
                     android:text="@string/tv_chap11"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btAlarmManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_alarmManagerActivity" />
+
+                <Button
+                    android:id="@+id/btDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_dialogActivity" />
+
+
             </LinearLayout>
 
 

@@ -87,6 +87,17 @@
 
     <!-- Text1の１１章の部品化と完成アプリ -->
     <string name="tv_chap11">１１章の部品化と完成アプリ</string>
+    <string name="bt_alarmManagerActivity">AlarmManager</string>
+    <string name="bt_alarm">５秒後にアラームをセット</string>
+    <string name="bt_cancel">アラームをキャンセル</string>
+    <string name="alarm_set">アラームをセットしました。</string>
+    <string name="alarm_receive">アラームを受信しました。</string>
+    <string name="alarm_cancel">アラームをキャンセルしました。</string>
+
+    <string name="bt_dialogActivity">Dialog</string>
+    <string name="bt_alertDialog">アラートダイアログ</string>
+
+
 
 
     <!-- Text1の１２章の部品化と完成アプリ -->

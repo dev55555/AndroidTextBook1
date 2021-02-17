@@ -78,9 +78,16 @@ class MainActivity : AppCompatActivity() {
                 startActivity<Intent2Activity>() }
         )
 
+        // １１章
+        btAlarmManager.setOnClickListener(
+            View.OnClickListener {
+                startActivity<AlarmManagerActivity>() }
+        )
 
-
-
+        btDialog.setOnClickListener(
+            View.OnClickListener {
+                startActivity<DialogActivity>() }
+        )
 
 
         //以下はまだ未整理
