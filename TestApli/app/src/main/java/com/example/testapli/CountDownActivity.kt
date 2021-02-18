@@ -12,11 +12,12 @@ class CountDownActivity : AppCompatActivity() {
 
     inner class CountDownTimerImpl(millisInFuture: Long, countDownInterval: Long) :
         CountDownTimer(millisInFuture, countDownInterval) {
+        // コンストラクタで指定した間隔で呼ばれるメソッド
         override fun onTick(millisUntilFinished: Long) {
             Log.d(CLASS_NAME_TAG, "onTick()")
             tv1.text = "onTick()"
         }
-
+        // タイマー終了時に呼ばれるメソッド
         override fun onFinish() {
             Log.d(CLASS_NAME_TAG, "onFinish()")
             tv1.text = "onFinish()"

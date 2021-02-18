@@ -83,7 +83,18 @@
     <string name="tv_chap10">１０章の部品化と完成アプリ</string>
     <string name="bt_optionMenu">オプションメニューへ</string>
     <string name="bt_contextMenu">コンテキストメニューへ</string>
-
+    <string name="bt_menuApp">メニューApp</string>
+    <string name="tpo_page">TOP PAGE</string>
+    <string name="lunch_text">ランチ</string>
+    <string name="dinner_text">ディナー</string>
+    <string name="lunch01_text">エビフライと牛ロースステーキ</string>
+    <string name="lunch02_text">鶏の赤ワイン煮</string>
+    <string name="dinner01_text">海の幸コース</string>
+    <string name="dinner02_text">牛フィレ肉のセット</string>
+    <string name="sms_text">SMSで予約</string>
+    <string name="mail_text">メールで予約</string>
+    <string name="share_text">共有する</string>
+    <string name="browse_text">ウェブサイトを開く</string>
 
     <!-- Text1の１１章の部品化と完成アプリ -->
     <string name="tv_chap11">１１章の部品化と完成アプリ</string>
@@ -96,9 +107,8 @@
 
     <string name="bt_dialogActivity">Dialog</string>
     <string name="bt_alertDialog">アラートダイアログ</string>
-
-
-
+    <string name="bt_sleepOff">スリープオフ</string>
+    <string name="bt_alarmClockApp">AlarmClockApp</string>
 
     <!-- Text1の１２章の部品化と完成アプリ -->
     <string name="tv_chap12">１２章の部品化と完成アプリ</string>

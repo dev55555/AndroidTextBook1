@@ -133,6 +133,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="暗黙インテントの例" />
+
+                <Button
+                    android:id="@+id/btMenuApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_menuApp" />
             </LinearLayout>
 
             <!-- Text1の１１章 -->
@@ -161,6 +167,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_dialogActivity" />
+
+                <Button
+                    android:id="@+id/btSleepOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_sleepOff" />
+
+                <Button
+                    android:id="@+id/btAlarmClockApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_alarmClockApp" />
 
 
             </LinearLayout>

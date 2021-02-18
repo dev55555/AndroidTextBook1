@@ -78,17 +78,35 @@ class MainActivity : AppCompatActivity() {
                 startActivity<Intent2Activity>() }
         )
 
+        btMenuApp.setOnClickListener(
+            View.OnClickListener {
+                startActivity<MenuAppActivity>() }
+        )
+
         // １１章
         btAlarmManager.setOnClickListener(
             View.OnClickListener {
-                startActivity<AlarmManagerActivity>() }
+                startActivity<AlarmManagerActivity>()
+            }
         )
 
         btDialog.setOnClickListener(
             View.OnClickListener {
-                startActivity<DialogActivity>() }
+                startActivity<DialogActivity>()
+            }
         )
 
+        btSleepOff.setOnClickListener(
+            View.OnClickListener {
+                startActivity<SleepOffActivity>()
+            }
+        )
+
+        btAlarmClockApp.setOnClickListener(
+            View.OnClickListener {
+                startActivity<AlarmClockAppActivity>()
+            }
+        )
 
         //以下はまだ未整理
         btSpinner.setOnClickListener(
