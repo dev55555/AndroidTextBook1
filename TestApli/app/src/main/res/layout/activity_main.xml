@@ -218,6 +218,12 @@
                     android:textSize="16sp" />
 
                 <Button
+                    android:id="@+id/btRealm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_realm" />
+
+                <Button
                     android:id="@+id/btScheduleApp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

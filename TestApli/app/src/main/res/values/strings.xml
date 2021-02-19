@@ -112,6 +112,10 @@
 
     <!-- Text1の１２章の部品化と完成アプリ -->
     <string name="tv_chap12">１２章の部品化と完成アプリ</string>
+
+    <string name="bt_realm">Realm</string>
+
+
     <string name="bt_scheduleApp">ScheduleApp</string>
     <string name="title_activity_schedule">ScheduleActivity</string>
     <string name="action_settings">Settings</string>

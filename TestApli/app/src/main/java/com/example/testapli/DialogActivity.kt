@@ -21,7 +21,7 @@ class DialogActivity : AppCompatActivity()
             val dialog = AlertDialogImpl()
             dialog.show(supportFragmentManager, TAG)
             tv1.text = ""
-            tv2.text = ""
+            tv3.text = ""
         }
 
         // 日付
@@ -40,7 +40,7 @@ class DialogActivity : AppCompatActivity()
         tv1.text = "あと５分"
     }
     override fun onPositiveClick() {
-        tv2.text = "起きる"
+        tv3.text = "起きる"
     }
 
     override fun onSelected(year: Int, month: Int, date: Int) {

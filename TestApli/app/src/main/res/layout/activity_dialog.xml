@@ -23,12 +23,12 @@
         android:layout_marginTop="8dp"
         android:text="Negative"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/tv2"
+        app:layout_constraintEnd_toStartOf="@+id/tv3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt1" />
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

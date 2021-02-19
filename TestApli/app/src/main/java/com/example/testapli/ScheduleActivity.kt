@@ -16,7 +16,6 @@ class ScheduleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_schedule)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        Realm.init(this)
         realm = Realm.getDefaultInstance()
 
         val schedules = realm.where(Schedule::class.java).findAll()

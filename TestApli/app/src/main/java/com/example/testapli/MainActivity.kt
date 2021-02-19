@@ -109,6 +109,12 @@ class MainActivity : AppCompatActivity() {
         )
 
         // １２章
+        btRealm.setOnClickListener(
+            View.OnClickListener {
+                startActivity<RealmActivity>()
+            }
+        )
+
         btScheduleApp.setOnClickListener(
                 View.OnClickListener {
                     startActivity<ScheduleActivity>()
