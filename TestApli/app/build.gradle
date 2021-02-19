@@ -3,6 +3,9 @@ plugins {
     id 'kotlin-android'
 }
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -33,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation 'io.realm:android-adapters:2.1.1'
     implementation "org.jetbrains.anko:anko-common:$anko_version"
     implementation 'androidx.preference:preference:1.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -40,6 +44,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

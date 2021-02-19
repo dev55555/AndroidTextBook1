@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-        <activity android:name=".MenuAppActivity"></activity>
+        <activity android:name=".ScheduleEditActivity" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:theme="@style/Theme.TestApli.NoActionBar" />
+        <activity android:name=".MenuAppActivity" />
         <activity android:name=".SleepOffActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".AlarmManagerActivity" />
@@ -41,6 +46,7 @@
 
         <receiver android:name=".BroadcastReceiverImpl" />
         <receiver android:name=".AlarmBroadcastReceiver" />
+
     </application>
 
 </manifest>

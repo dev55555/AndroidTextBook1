@@ -108,6 +108,13 @@ class MainActivity : AppCompatActivity() {
             }
         )
 
+        // １２章
+        btScheduleApp.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<ScheduleActivity>()
+                }
+        )
+
         //以下はまだ未整理
         btSpinner.setOnClickListener(
             View.OnClickListener {

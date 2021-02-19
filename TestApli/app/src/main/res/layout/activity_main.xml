@@ -27,6 +27,7 @@
 
             <!-- Text1の８章 -->
             <LinearLayout
+                android:id="@+id/chap8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -39,21 +40,25 @@
                     android:text="@string/tv_chap8"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
                 <Button
                     android:id="@+id/btViewPropertyAnimator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_ViewPropertyActivity" />
+
                 <Button
                     android:id="@+id/btImageSwitcher"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_ImageSwitcherActivity" />
+
                 <Button
                     android:id="@+id/btTimer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_TimerActivity" />
+
                 <Button
                     android:id="@+id/btMediaPlayer"
                     android:layout_width="match_parent"
@@ -69,6 +74,7 @@
 
             <!-- Text1の９章 -->
             <LinearLayout
+                android:id="@+id/chap9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -81,16 +87,19 @@
                     android:text="@string/tv_chap9"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
                 <Button
                     android:id="@+id/btFloatingActionButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_floatingActionButtonActivity" />
+
                 <Button
                     android:id="@+id/btCountDown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_countDownActivity" />
+
                 <Button
                     android:id="@+id/btSoundPool"
                     android:layout_width="match_parent"
@@ -106,6 +115,7 @@
 
             <!-- Text1の１０章 -->
             <LinearLayout
+                android:id="@+id/chap10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -118,16 +128,19 @@
                     android:text="@string/tv_chap10"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
                 <Button
                     android:id="@+id/btOptionMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_optionMenu" />
+
                 <Button
                     android:id="@+id/btContextMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_contextMenu" />
+
                 <Button
                     android:id="@+id/btIntent2"
                     android:layout_width="match_parent"
@@ -143,6 +156,7 @@
 
             <!-- Text1の１１章 -->
             <LinearLayout
+                android:id="@+id/chap11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -189,6 +203,7 @@
 
             <!-- Text1の１２章 -->
             <LinearLayout
+                android:id="@+id/chap12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -201,6 +216,12 @@
                     android:text="@string/tv_chap12"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btScheduleApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_scheduleApp" />
             </LinearLayout>
 
 
@@ -212,6 +233,7 @@
 
             <!-- Text1の３章 -->
             <LinearLayout
+                android:id="@+id/chap3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -228,6 +250,7 @@
 
             <!-- Text1の５章 -->
             <LinearLayout
+                android:id="@+id/chap5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -244,6 +267,7 @@
 
             <!-- Text1の６章 -->
             <LinearLayout
+                android:id="@+id/chap6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -256,16 +280,19 @@
                     android:text="@string/tv_chap6"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
                 <Button
                     android:id="@+id/btSpinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_spinner" />
+
                 <Button
                     android:id="@+id/btSeekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_seekbar" />
+
                 <Button
                     android:id="@+id/btRadioGroup"
                     android:layout_width="match_parent"
@@ -275,6 +302,7 @@
 
             <!-- Text1の７章 -->
             <LinearLayout
+                android:id="@+id/chap7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
@@ -287,6 +315,7 @@
                     android:text="@string/tv_chap7"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
                 <Button
                     android:id="@+id/btSensor"
                     android:layout_width="match_parent"
