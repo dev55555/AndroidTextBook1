@@ -114,6 +114,7 @@
     <string name="tv_chap12">１２章の部品化と完成アプリ</string>
 
     <string name="bt_realm">Realm</string>
+    <string name="bt_listView">ListView</string>
 
 
     <string name="bt_scheduleApp">ScheduleApp</string>

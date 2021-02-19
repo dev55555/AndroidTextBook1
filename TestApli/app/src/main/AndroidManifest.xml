@@ -10,11 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-
-        <activity android:name=".RealmActivity"></activity>
-
+        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".RealmActivity" />
         <activity android:name=".ScheduleEditActivity" />
-
         <activity
             android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule"

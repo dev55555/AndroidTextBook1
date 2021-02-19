@@ -121,6 +121,12 @@ class MainActivity : AppCompatActivity() {
                 }
         )
 
+        btListView.setOnClickListener(
+            View.OnClickListener {
+                startActivity<ListViewActivity>()
+            }
+        )
+
         //以下はまだ未整理
         btSpinner.setOnClickListener(
             View.OnClickListener {

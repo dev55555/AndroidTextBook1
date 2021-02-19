@@ -25,9 +25,8 @@ class RealmActivity : AppCompatActivity() {
         bt1.setOnClickListener {
             Log.d(CLASS_NAME_TAG, "SAVE")
             realm.executeTransaction {
-                val maxId = realm.where<Schedule>().max("id")
-                val nextId = (maxId?.toLong() ?: 0L) + 1L
-                val modelSchedule = realm.createObject<RealmModelSchedule>(nextId)
+                val id = 1L
+                val modelSchedule = realm.createObject<RealmModelSchedule>(id)
                 modelSchedule.date = Date("2022/01/01")
                 modelSchedule.title = et1.text.toString()
                 modelSchedule.detail = "詳細"
@@ -39,6 +38,15 @@ class RealmActivity : AppCompatActivity() {
             et1.setText("")
             tv2.text = ""
             tv3.text = ""
+
+            // ２件目
+            realm.executeTransaction {
+                val id = 2L
+                val modelSchedule = realm.createObject<RealmModelSchedule>(id)
+                modelSchedule.date = Date("2022/01/02")
+                modelSchedule.title = "２件目"
+                modelSchedule.detail = "詳細"
+            }
         }
 
         // 検索
