@@ -11,6 +11,38 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        // ６章
+        btSpinner.setOnClickListener(
+            View.OnClickListener {
+                startActivity<SpinnerActivity>()
+            }
+        )
+        btSeekBar.setOnClickListener(
+            View.OnClickListener {
+                startActivity<SeekBarActivity>()
+            }
+        )
+        btRadioGroup.setOnClickListener(
+            View.OnClickListener {
+                startActivity<RadioGroupActivity>()
+            }
+        )
+
+        // ７章
+        btSensor.setOnClickListener(
+            View.OnClickListener {
+                startActivity<SensorActivity>()
+            }
+        )
+        btSensor2.setOnClickListener(
+            View.OnClickListener {
+                startActivity<Sensor2Activity>()
+            }
+        )
+
+
+
         // ８章
         btViewPropertyAnimator.setOnClickListener(
                 View.OnClickListener {
@@ -61,6 +93,21 @@ class MainActivity : AppCompatActivity() {
         )
 
         // １０章
+        btScrollView.setOnClickListener(
+                View.OnClickListener {
+                    startActivity<ScrollViewActivity>()
+                }
+        )
+        btScrollView2.setOnClickListener(
+            View.OnClickListener {
+                startActivity<ScrollView2Activity>()
+            }
+        )
+        btLinearLayout.setOnClickListener(
+            View.OnClickListener {
+                startActivity<LinearLayoutActivity>()
+            }
+        )
         btOptionMenu.setOnClickListener(
             View.OnClickListener {
                 startActivity<OptionMenuActivity>()
@@ -126,43 +173,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity<ListViewActivity>()
             }
         )
-
-        //以下はまだ未整理
-        btSpinner.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SpinnerActivity>()
-            }
-        )
-
-        btSeekBar.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SeekBarActivity>()
-            }
-        )
-
-        btRadioGroup.setOnClickListener(
-            View.OnClickListener {
-                startActivity<RadioGroupActivity>()
-            }
-        )
-
-        btSensor.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SensorActivity>()
-            }
-        )
-
-        btSensor2.setOnClickListener(
-            View.OnClickListener {
-                startActivity<Sensor2Activity>()
-            }
-        )
-
-
-
-
-
-
 
 
     }

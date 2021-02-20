@@ -81,9 +81,14 @@
 
     <!-- Text1の１０章の部品化と完成アプリ -->
     <string name="tv_chap10">１０章の部品化と完成アプリ</string>
-    <string name="bt_optionMenu">オプションメニューへ</string>
-    <string name="bt_contextMenu">コンテキストメニューへ</string>
-    <string name="bt_menuApp">メニューApp</string>
+    <string name="bt_scrollView">ScrollView</string>
+    <string name="bt_scrollView2">ScrollView2</string>
+    <string name="bt_linearLayout">LinearLayout</string>
+    <string name="bt_optionMenu">OptionsMenu</string>
+    <string name="bt_contextMenu">ContextMenu</string>
+    <string name="bt_intent2">Intent2</string>
+
+    <string name="bt_menuApp">洋食屋のメニューアプリ</string>
     <string name="tpo_page">TOP PAGE</string>
     <string name="lunch_text">ランチ</string>
     <string name="dinner_text">ディナー</string>

@@ -16,17 +16,18 @@ class Intent2Activity : AppCompatActivity() {
 
         bt_sms.setOnClickListener(
             View.OnClickListener {
-                val number = "999-9999-9999"
+                val number = "08031521486"
                 val uri = Uri.parse("sms:$number")
                 var intent = Intent(Intent.ACTION_VIEW)
                 intent.data = uri
+                intent.putExtra("sms_body", "SMS送信サンプル")
                 startActivity(intent)
             }
         )
 
         bt_mail.setOnClickListener(
             View.OnClickListener {
-                val email: String = "nobody@example.com"
+                val email: String = "toshix.ishix.info@gmail.com"
                 val subject: String = "予約問い合わせ"
                 val text: String = "以下の通り予約希望します。"
                 val uri = Uri.parse("mailto:")

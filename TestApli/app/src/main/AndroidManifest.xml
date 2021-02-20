@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".ScrollView2Activity"></activity>
+        <activity android:name=".LinearLayoutActivity" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".ListViewActivity" />
         <activity android:name=".RealmActivity" />
         <activity android:name=".ScheduleEditActivity" />
         <activity

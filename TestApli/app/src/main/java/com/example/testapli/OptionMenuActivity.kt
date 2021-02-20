@@ -15,7 +15,7 @@ class OptionMenuActivity : AppCompatActivity() {
 
     // オプションメニューの描画
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.option_menu, menu)
+        this.menuInflater.inflate(R.menu.option_menu, menu)
         return true
     }
 
@@ -25,6 +25,10 @@ class OptionMenuActivity : AppCompatActivity() {
             R.id.btHome -> {
                 // 処理
                 Toast.makeText(this, "Home is tapped.", Toast.LENGTH_LONG).show()
+            }
+            R.id.btTop1 -> {
+                // 処理
+                Toast.makeText(this, "Top1 is tapped.", Toast.LENGTH_LONG).show()
             }
             R.id.btItem1 -> {
                 // 処理

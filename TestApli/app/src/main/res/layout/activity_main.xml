@@ -27,6 +27,102 @@
 
             <!-- Text1の８章 -->
             <LinearLayout
+                android:id="@+id/chap3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の３章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap3Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap3"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chap5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の５章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap5Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap5"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chap6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の６章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap6Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap6"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_spinner" />
+
+                <Button
+                    android:id="@+id/btSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_seekbar" />
+
+                <Button
+                    android:id="@+id/btRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_radioGroup" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chap7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+                <!-- Text1の７章の部品化 -->
+                <TextView
+                    android:id="@+id/tvChap7Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_chap7"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btSensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/bt_sensor1" />
+
+                <Button
+                    android:id="@+id/btSensor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/bt_sensor2" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/chap8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -130,6 +226,24 @@
                     android:textSize="16sp" />
 
                 <Button
+                    android:id="@+id/btScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_scrollView" />
+
+                <Button
+                    android:id="@+id/btScrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_scrollView2" />
+
+                <Button
+                    android:id="@+id/btLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_linearLayout" />
+
+                <Button
                     android:id="@+id/btOptionMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -145,7 +259,7 @@
                     android:id="@+id/btIntent2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="暗黙インテントの例" />
+                    android:text="@string/bt_intent2" />
 
                 <Button
                     android:id="@+id/btMenuApp"
@@ -244,107 +358,12 @@
 
 
             <!-- Text1の３章 -->
-            <LinearLayout
-                android:id="@+id/chap3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の３章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap3Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap3"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-            </LinearLayout>
 
             <!-- Text1の５章 -->
-            <LinearLayout
-                android:id="@+id/chap5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の５章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap5Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap5"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-            </LinearLayout>
 
             <!-- Text1の６章 -->
-            <LinearLayout
-                android:id="@+id/chap6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の６章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap6Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap6"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/btSpinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_spinner" />
-
-                <Button
-                    android:id="@+id/btSeekBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_seekbar" />
-
-                <Button
-                    android:id="@+id/btRadioGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_radioGroup" />
-            </LinearLayout>
 
             <!-- Text1の７章 -->
-            <LinearLayout
-                android:id="@+id/chap7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
-                android:orientation="vertical">
-                <!-- Text1の７章の部品化 -->
-                <TextView
-                    android:id="@+id/tvChap7Title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tv_chap7"
-                    android:textAlignment="center"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/btSensor"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/bt_sensor1" />
-
-                <Button
-                    android:id="@+id/btSensor2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/bt_sensor2" />
-            </LinearLayout>
-
-
-
 
 
         </LinearLayout>

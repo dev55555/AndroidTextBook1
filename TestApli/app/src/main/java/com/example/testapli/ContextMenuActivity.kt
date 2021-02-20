@@ -14,7 +14,7 @@ class ContextMenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_context_menu)
 
         // コンテキストメニューをViewに追加
-        registerForContextMenu(imageView6)
+        this.registerForContextMenu(imageView)
     }
 
     // コンテキストメニューの作成
