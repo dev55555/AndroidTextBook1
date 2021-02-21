@@ -40,6 +40,24 @@
                     android:text="@string/tv_chap3"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_button" />
+
+                <Button
+                    android:id="@+id/btImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_imageView" />
+
+                <Button
+                    android:id="@+id/btHelloAndroid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_helloAndroid" />
             </LinearLayout>
 
             <LinearLayout

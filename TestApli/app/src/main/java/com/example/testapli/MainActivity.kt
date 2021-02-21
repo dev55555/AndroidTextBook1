@@ -11,6 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // ３章
+        btButton.setOnClickListener { startActivity<ButtonActivity>() }
+        btImageView.setOnClickListener { startActivity<ImageViewActivity>() }
+        btHelloAndroid.setOnClickListener { startActivity<HelloAndroidAppActivity>() }
 
         // ６章
         btSpinner.setOnClickListener(

@@ -22,6 +22,19 @@
 
     <!-- Text1の３章の部品化と完成アプリ -->
     <string name="tv_chap3">３章の部品化と完成アプリ</string>
+    <string name="bt_button">Button</string>
+    <string name="tv_hi">Hi, Android !!</string>
+    <string name="tv_morning">Good Morning, Kotlin !!</string>
+    <string name="tv_afternoon">Good Afternoon, Kotlin !!</string>
+    <string name="bt_imageView">ImageView</string>
+
+
+    <string name="bt_bt1">ボタン１</string>
+    <string name="bt_bt2">ボタン２</string>
+
+    <string name="bt_helloAndroid">Hello Android App</string>
+    <string name="tv_hello">Hello Android Studio !!</string>
+    <string name="bt_tapHere">ここをタップ！</string>
 
     <!-- Text1の５章の部品化と完成アプリ -->
     <string name="tv_chap5">５章の部品化と完成アプリ</string>
