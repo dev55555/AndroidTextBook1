@@ -22,8 +22,9 @@ class ButtonActivity : AppCompatActivity() {
                 }
             }
         )
-        // kotlin android extensionsを使用して、ID名を変数として使用できる。
+        // kotlin android extensionsを使用して、ID名を変数として使用可能
         // KotlinのSAM変換とラムダ式により、インタフェースの実装と処理を記述
+        // Kotlinのプロパティによりオブジェクトのフィールド変数にgetter, setterを介さずにアクセスしている
         button02.setOnClickListener {
             textView01.text = getString(R.string.tv_afternoon)
         }

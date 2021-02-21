@@ -10,7 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-        <activity android:name=".ImageViewActivity"></activity>
+        <activity android:name=".MySizeInputActivity"></activity>
+        <activity android:name=".MySizeAppActivity" />
+        <activity android:name=".Janken2ResultActivity" />
+        <activity android:name=".JankenResultActivity" />
+        <activity android:name=".Janken2Activity" />
+        <activity android:name=".JankenActivity" />
+        <activity android:name=".ImageViewActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".HelloAndroidAppActivity" />
         <activity android:name=".ScrollView2Activity" />

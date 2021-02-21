@@ -32,9 +32,18 @@
     <string name="bt_helloAndroid">Hello Android App</string>
     <string name="tv_hello">Hello Android Studio !!</string>
     <string name="bt_tapHere">ここをタップ！</string>
+    <string name="im_text_sample">サンプル画像</string>
 
     <!-- Text1の５章の部品化と完成アプリ -->
     <string name="tv_chap5">５章の部品化と完成アプリ</string>
+    <string name="bt_janken">じゃんけんアプリ</string>
+    <string name="bt_janken2">じゃんけん２アプリ</string>
+    <string name="janken_text">じゃん・けん・・・</string>
+    <string name="back_text">戻る</string>
+    <string name="result_win">あなたの勝ちです</string>
+    <string name="result_lose">コンピュータの勝ちです</string>
+    <string name="result_draw">あいこです</string>
+
     <!--
     インテントでの画面遷移
     共有プリファレンス
@@ -49,6 +58,9 @@
     <string name="bt_spinner">スピナーアクティビティへ</string>
     <string name="bt_seekbar">シークバーアクティビティへ</string>
     <string name="bt_radioGroup">ラジオボタンアクティビティへ</string>
+    <string name="bt_mysizeApp">体型記録アプリ</string>
+    <string name="bt_save">保存</string>
+    <string name="hegiht">身長</string>
 
     <!-- Text1の７章の部品化と完成アプリ -->
     <string name="tv_chap7">７章の部品化と完成アプリ</string>

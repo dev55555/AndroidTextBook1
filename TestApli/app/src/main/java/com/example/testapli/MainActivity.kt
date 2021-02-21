@@ -16,168 +16,53 @@ class MainActivity : AppCompatActivity() {
         btImageView.setOnClickListener { startActivity<ImageViewActivity>() }
         btHelloAndroid.setOnClickListener { startActivity<HelloAndroidAppActivity>() }
 
+        // ５章
+
+        btJanken.setOnClickListener { startActivity<JankenActivity>() }
+        btJanken2.setOnClickListener { startActivity<Janken2Activity>() }
+
         // ６章
-        btSpinner.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SpinnerActivity>()
-            }
-        )
-        btSeekBar.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SeekBarActivity>()
-            }
-        )
-        btRadioGroup.setOnClickListener(
-            View.OnClickListener {
-                startActivity<RadioGroupActivity>()
-            }
-        )
+        btSpinner.setOnClickListener { startActivity<SpinnerActivity>() }
+        btSeekBar.setOnClickListener { startActivity<SeekBarActivity>() }
+        btRadioGroup.setOnClickListener { startActivity<RadioGroupActivity>() }
+        btMysizeApp.setOnClickListener { startActivity<MySizeAppActivity>() }
 
         // ７章
-        btSensor.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SensorActivity>()
-            }
-        )
-        btSensor2.setOnClickListener(
-            View.OnClickListener {
-                startActivity<Sensor2Activity>()
-            }
-        )
-
-
+        btSensor.setOnClickListener { startActivity<SensorActivity>() }
+        btSensor2.setOnClickListener { startActivity<Sensor2Activity>() }
 
         // ８章
-        btViewPropertyAnimator.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<ViewPropertyActivity>()
-                }
-        )
-        btImageSwitcher.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<ImageSwitcherActivity>()
-                }
-        )
-        btTimer.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<TimerActivity>()
-                }
-        )
-        btMediaPlayer.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<MediaPlayerActivity>()
-                }
-        )
-        btSlideshow.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<SlideshowActivity>()
-                }
-        )
-        // ９章
-        btFloatingActionButton.setOnClickListener(
-            View.OnClickListener {
-                startActivity<FloatingActionButtonActivity>()
-            }
-        )
-        btCountDown.setOnClickListener(
-            View.OnClickListener {
-                startActivity<CountDownActivity>()
-            }
-        )
-        btSoundPool.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SoundPoolActivity>()
-            }
-        )
+        btViewPropertyAnimator.setOnClickListener { startActivity<ViewPropertyActivity>() }
+        btImageSwitcher.setOnClickListener { startActivity<ImageSwitcherActivity>() }
+        btTimer.setOnClickListener { startActivity<TimerActivity>() }
+        btMediaPlayer.setOnClickListener { startActivity<MediaPlayerActivity>() }
+        btSlideshow.setOnClickListener { startActivity<SlideshowActivity>() }
 
-        btCountDownApp.setOnClickListener(
-            View.OnClickListener {
-                startActivity<CountDownAppActivity>()
-            }
-        )
+        // ９章
+        btFloatingActionButton.setOnClickListener { startActivity<FloatingActionButtonActivity>() }
+        btCountDown.setOnClickListener { startActivity<CountDownActivity>() }
+        btSoundPool.setOnClickListener { startActivity<SoundPoolActivity>()}
+        btCountDownApp.setOnClickListener { startActivity<CountDownAppActivity>() }
 
         // １０章
-        btScrollView.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<ScrollViewActivity>()
-                }
-        )
-        btScrollView2.setOnClickListener(
-            View.OnClickListener {
-                startActivity<ScrollView2Activity>()
-            }
-        )
-        btLinearLayout.setOnClickListener(
-            View.OnClickListener {
-                startActivity<LinearLayoutActivity>()
-            }
-        )
-        btOptionMenu.setOnClickListener(
-            View.OnClickListener {
-                startActivity<OptionMenuActivity>()
-            }
-        )
-
-        btContextMenu.setOnClickListener(
-            View.OnClickListener {
-                startActivity<ContextMenuActivity>()
-            }
-        )
-
-        btIntent2.setOnClickListener(
-            View.OnClickListener {
-                startActivity<Intent2Activity>() }
-        )
-
-        btMenuApp.setOnClickListener(
-            View.OnClickListener {
-                startActivity<MenuAppActivity>() }
-        )
+        btScrollView.setOnClickListener { startActivity<ScrollViewActivity>() }
+        btScrollView2.setOnClickListener { startActivity<ScrollView2Activity>() }
+        btLinearLayout.setOnClickListener { startActivity<LinearLayoutActivity>() }
+        btOptionMenu.setOnClickListener { startActivity<OptionMenuActivity>() }
+        btContextMenu.setOnClickListener { startActivity<ContextMenuActivity>() }
+        btIntent2.setOnClickListener { startActivity<Intent2Activity>() }
+        btMenuApp.setOnClickListener { startActivity<MenuAppActivity>() }
 
         // １１章
-        btAlarmManager.setOnClickListener(
-            View.OnClickListener {
-                startActivity<AlarmManagerActivity>()
-            }
-        )
-
-        btDialog.setOnClickListener(
-            View.OnClickListener {
-                startActivity<DialogActivity>()
-            }
-        )
-
-        btSleepOff.setOnClickListener(
-            View.OnClickListener {
-                startActivity<SleepOffActivity>()
-            }
-        )
-
-        btAlarmClockApp.setOnClickListener(
-            View.OnClickListener {
-                startActivity<AlarmClockAppActivity>()
-            }
-        )
+        btAlarmManager.setOnClickListener { startActivity<AlarmManagerActivity>() }
+        btDialog.setOnClickListener { startActivity<DialogActivity>() }
+        btSleepOff.setOnClickListener { startActivity<SleepOffActivity>() }
+        btAlarmClockApp.setOnClickListener { startActivity<AlarmClockAppActivity>() }
 
         // １２章
-        btRealm.setOnClickListener(
-            View.OnClickListener {
-                startActivity<RealmActivity>()
-            }
-        )
-
-        btScheduleApp.setOnClickListener(
-                View.OnClickListener {
-                    startActivity<ScheduleActivity>()
-                }
-        )
-
-        btListView.setOnClickListener(
-            View.OnClickListener {
-                startActivity<ListViewActivity>()
-            }
-        )
-
+        btRealm.setOnClickListener { startActivity<RealmActivity>() }
+        btScheduleApp.setOnClickListener { startActivity<ScheduleActivity>() }
+        btListView.setOnClickListener { startActivity<ListViewActivity>() }
 
     }
 }

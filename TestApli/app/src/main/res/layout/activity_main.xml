@@ -74,6 +74,18 @@
                     android:text="@string/tv_chap5"
                     android:textAlignment="center"
                     android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btJanken"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_janken" />
+
+                <Button
+                    android:id="@+id/btJanken2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_janken2" />
             </LinearLayout>
 
             <LinearLayout
@@ -108,6 +120,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bt_radioGroup" />
+
+                <Button
+                    android:id="@+id/btMysizeApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_mysizeApp" />
             </LinearLayout>
 
             <LinearLayout
