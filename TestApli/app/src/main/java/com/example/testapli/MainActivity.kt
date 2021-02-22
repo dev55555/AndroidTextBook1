@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         btHelloAndroid.setOnClickListener { startActivity<HelloAndroidAppActivity>() }
 
         // ５章
-
+        btIntent.setOnClickListener { startActivity<IntentActivity>() }
+        btSharedPreference.setOnClickListener { startActivity<SharedPreferenceActivity>() }
         btJanken.setOnClickListener { startActivity<JankenActivity>() }
         btJanken2.setOnClickListener { startActivity<Janken2Activity>() }
 

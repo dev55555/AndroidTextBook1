@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-        <activity android:name=".MySizeInputActivity"></activity>
+        <activity android:name=".SharedPreferenceActivity"></activity>
+        <activity android:name=".IntentNextActivity" />
+        <activity android:name=".IntentActivity" />
+        <activity android:name=".MySizeInputActivity" />
         <activity android:name=".MySizeAppActivity" />
         <activity android:name=".Janken2ResultActivity" />
         <activity android:name=".JankenResultActivity" />

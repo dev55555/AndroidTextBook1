@@ -36,6 +36,9 @@
 
     <!-- Text1の５章の部品化と完成アプリ -->
     <string name="tv_chap5">５章の部品化と完成アプリ</string>
+
+    <string name="bt_intent">Intent</string>
+    <string name="bt_sharedPreferences">SharedPreferences</string>
     <string name="bt_janken">じゃんけんアプリ</string>
     <string name="bt_janken2">じゃんけん２アプリ</string>
     <string name="janken_text">じゃん・けん・・・</string>

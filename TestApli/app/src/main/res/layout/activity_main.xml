@@ -76,6 +76,18 @@
                     android:textSize="16sp" />
 
                 <Button
+                    android:id="@+id/btIntent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_intent" />
+
+                <Button
+                    android:id="@+id/btSharedPreference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_sharedPreferences" />
+
+                <Button
                     android:id="@+id/btJanken"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
