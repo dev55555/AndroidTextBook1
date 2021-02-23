@@ -58,9 +58,9 @@
     配列リソース
     体型記録アプリ
     -->
-    <string name="bt_spinner">スピナーアクティビティへ</string>
-    <string name="bt_seekbar">シークバーアクティビティへ</string>
-    <string name="bt_radioGroup">ラジオボタンアクティビティへ</string>
+    <string name="bt_spinner">Spinner</string>
+    <string name="bt_seekbar">SeekBar</string>
+    <string name="bt_radioGroup">RadioButton</string>
     <string name="bt_mysizeApp">体型記録アプリ</string>
     <string name="bt_save">保存</string>
     <string name="hegiht">身長</string>

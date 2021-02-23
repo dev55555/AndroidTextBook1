@@ -32,11 +32,11 @@ class SpinnerActivity : AppCompatActivity() {
         // string-arrayでArrayAdapterを作成、またレイアウトの設定もしている。
         ArrayAdapter.createFromResource(
             this,
-            R.array.list_spinner,
+            R.array.list_spinner2,
             android.R.layout.simple_spinner_item
         ).also {
-            adapter ->  adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            spinner2.adapter = adapter
+            arrayAdaptor ->  arrayAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner2.adapter = arrayAdaptor
         }
         // ユーザー選択への応答
         spinner2.onItemSelectedListener =
@@ -56,5 +56,31 @@ class SpinnerActivity : AppCompatActivity() {
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                 }
             }
+
+        // Spinnerに作成した配列を設定するサンプル
+        val items = arrayOf("選択肢Ａ", "選択肢Ｂ", "選択肢Ｃ")
+        val arrayAdaptor = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items)
+//        val arrayAdaptor = ArrayAdapter.createFromResource(this, R.array.list_spinner2, android.R.layout.simple_spinner_item)
+        arrayAdaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner3.adapter = arrayAdaptor
+
+        spinner3.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                        parent: AdapterView<*>?,
+                        view: View?,
+                        position: Int,
+                        id: Long
+                ) {
+                    val spinner = parent as? Spinner
+                    val item = spinner?.selectedItem as? String
+                    item?.let {
+                        if (it.isNotEmpty()) textView1.text = it
+                    }
+                }
+                override fun onNothingSelected(parent: AdapterView<*>?) {
+                }
+            }
+
     }
 }

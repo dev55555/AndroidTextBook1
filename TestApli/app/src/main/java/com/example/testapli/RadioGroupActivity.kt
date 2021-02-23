@@ -11,12 +11,9 @@ class RadioGroupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_radio_group)
 
-
         rGroup.setOnCheckedChangeListener { group, checkedId ->
-            checkedId
             textView31.text = findViewById<RadioButton>(checkedId).text
         }
-
     }
 
 //    fun onRadioButtonClicked(view: View) {

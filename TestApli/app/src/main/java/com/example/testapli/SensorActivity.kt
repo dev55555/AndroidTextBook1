@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.util.Log
 
 class SensorActivity : AppCompatActivity(), SensorEventListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sensor)
