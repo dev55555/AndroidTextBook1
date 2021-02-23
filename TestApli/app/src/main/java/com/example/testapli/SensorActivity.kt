@@ -21,10 +21,10 @@ class SensorActivity : AppCompatActivity(), SensorEventListener {
         if (event == null) return
 
         if (event.sensor.type == Sensor.TYPE_ACCELEROMETER) {
-            Log.d("MainActivity",
+            Log.d("SensorActivity",
                 "x = ${event.values[0].toString()}" +
-                        "y = ${event.values[0].toString()}" +
-                        "z = ${event.values[0].toString()}")
+                      "y = ${event.values[0].toString()}" +
+                      "z = ${event.values[0].toString()}")
         }
     }
 
@@ -40,9 +40,7 @@ class SensorActivity : AppCompatActivity(), SensorEventListener {
                 as SensorManager
         val accSensor = sensorManager.getDefaultSensor(
             Sensor.TYPE_ACCELEROMETER)
-        sensorManager.registerListener(
-            this, accSensor,
-            SensorManager.SENSOR_DELAY_GAME)
+        sensorManager.registerListener(this, accSensor, SensorManager.SENSOR_DELAY_GAME)
     }
 
     // センサーの監視を終了する
