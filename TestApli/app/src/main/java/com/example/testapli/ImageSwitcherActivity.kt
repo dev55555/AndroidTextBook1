@@ -26,13 +26,13 @@ class ImageSwitcherActivity : AppCompatActivity() {
                 imageSwitcher.setImageResource(R.drawable.slide01)
             }
         )
-        bt4.setOnClickListener(
+        bt2.setOnClickListener(
             View.OnClickListener {
                 imageSwitcher.setImageResource(R.drawable.slide02)
             }
         )
         // 画面切り替え時にアニメーションを設定
-        bt4.setOnClickListener(
+        bt3.setOnClickListener(
             View.OnClickListener {
                 imageSwitcher.setInAnimation(this, android.R.anim.fade_in)
                 imageSwitcher.setOutAnimation(this, android.R.anim.fade_out)

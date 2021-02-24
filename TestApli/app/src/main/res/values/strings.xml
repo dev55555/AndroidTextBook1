@@ -63,7 +63,7 @@
 
     <!-- Text1の８章の部品化と完成アプリ -->
     <string name="tv_chap8">８章の部品化と完成アプリ</string>
-    <string name="bt_ViewPropertyActivity">ViewProperty</string>
+    <string name="bt_ViewPropertyActivity">ViewPropertyAnimator</string>
     <string name="bt_ImageSwitcherActivity">ImageSwitcher</string>
     <string name="tv_TimerActivity">タイマー処理</string>
     <string name="bt_TimerActivity">Timer</string>

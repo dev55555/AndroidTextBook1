@@ -61,7 +61,7 @@ class SoundPoolActivity : AppCompatActivity() {
             isPlay = true
         }
 
-        bt3.setOnClickListener{
+        bt2.setOnClickListener{
             soundPool.play(soundResId2, 1.0f, 1.0f, 0, 0, 1.0f)
         }
 

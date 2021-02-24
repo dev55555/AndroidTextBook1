@@ -17,6 +17,7 @@ class TimerActivity : AppCompatActivity() {
         lateinit var timerMonitor: Timer
 
         // timer関数１
+        // 実行時にViewオブジェクトを変更するとエラーとなるケース
         bt1.setOnClickListener{
             isOn = !isOn
             Log.d("TimerActivity", "isOn:${isOn}")
@@ -25,18 +26,19 @@ class TimerActivity : AppCompatActivity() {
                 // tv1.text = "${tv1.text}＞" // 実行時エラー
             }
         }
-        bt4.setOnClickListener{
+        bt2.setOnClickListener{
             isOn = !isOn
             Log.d("TimerActivity", "isOn:${isOn}")
             timerMonitor.cancel()
             tv1.text = getString(R.string.tv_TimerActivity)
         }
         // タイトル変更のボタン
-        bt4.setOnClickListener{
-            tv1.text = "${tv1.text}＞"
+        bt3.setOnClickListener{
+            tv1.text = ""
         }
 
         // timer関数２
+        // 実行時にViewオブジェクトを変更するとエラーとならないケース
         val handler = Handler()
         bt4.setOnClickListener{
             isOn = !isOn

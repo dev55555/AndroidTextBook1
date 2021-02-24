@@ -13,7 +13,7 @@ class MediaPlayerActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        mediaPlayer = MediaPlayer.create(this, R.raw.getdown)
+        mediaPlayer = MediaPlayer.create(this, R.raw.jump)
         mediaPlayer.isLooping = true
     }
 
