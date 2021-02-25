@@ -38,17 +38,14 @@ class AlarmManagerActivity : AppCompatActivity() {
         val pending = PendingIntent.getBroadcast(this, 0, intent, 0)
         when {
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP -> {
-                val info = AlarmManager.AlarmClockInfo(
-                    calendar.timeInMillis, null)
+                val info = AlarmManager.AlarmClockInfo(calendar.timeInMillis, null)
                 am.setAlarmClock(info, pending)
             }
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT -> {
-                am.setExact(AlarmManager.RTC_WAKEUP,
-                    calendar.timeInMillis, pending)
+                am.setExact(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pending)
             }
             else -> {
-                am.set(AlarmManager.RTC_WAKEUP,
-                    calendar.timeInMillis, pending)
+                am.set(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pending)
             }
         }
     }

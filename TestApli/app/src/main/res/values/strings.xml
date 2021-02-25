@@ -111,6 +111,7 @@
 
     <!-- Text1の１１章の部品化と完成アプリ -->
     <string name="tv_chap11">１１章の部品化と完成アプリ</string>
+
     <string name="bt_alarmManagerActivity">AlarmManager</string>
     <string name="bt_alarm">５秒後にアラームをセット</string>
     <string name="bt_cancel">アラームをキャンセル</string>
@@ -120,6 +121,11 @@
 
     <string name="bt_dialogActivity">Dialog</string>
     <string name="bt_alertDialog">アラートダイアログ</string>
+    <string name="tv_negative">Negative</string>
+    <string name="tv_positive">Positive</string>
+    <string name="tv_date">日付のダイアログを表示</string>
+    <string name="tv_time">時刻のダイアログを表示</string>
+
     <string name="bt_sleepOff">スリープオフ</string>
     <string name="bt_alarmClockApp">AlarmClockApp</string>
 

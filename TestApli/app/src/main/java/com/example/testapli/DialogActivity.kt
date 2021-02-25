@@ -11,7 +11,7 @@ class DialogActivity : AppCompatActivity()
     , DatePickerDialogImpl.OnDateSelectedListener
     , TimePickerDialogImpl.OnTimeSelectedListener {
 
-    private val TAG = "DialogActivity"
+    private val CLASS_NAME_TAG = "DialogActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,20 +19,20 @@ class DialogActivity : AppCompatActivity()
 
         bt1.setOnClickListener {
             val dialog = AlertDialogImpl()
-            dialog.show(supportFragmentManager, TAG)
+            dialog.show(supportFragmentManager, CLASS_NAME_TAG)
             tv1.text = ""
-            tv3.text = ""
+            tv2.text = ""
         }
 
         // 日付
         tv3.setOnClickListener {
             val dialog = DatePickerDialogImpl()
-            dialog.show(supportFragmentManager, TAG)
+            dialog.show(supportFragmentManager, CLASS_NAME_TAG)
         }
         // 時刻
         tv4.setOnClickListener {
             val dialog = TimePickerDialogImpl()
-            dialog.show(supportFragmentManager, TAG)
+            dialog.show(supportFragmentManager, CLASS_NAME_TAG)
         }
 
     }
@@ -40,7 +40,7 @@ class DialogActivity : AppCompatActivity()
         tv1.text = "あと５分"
     }
     override fun onPositiveClick() {
-        tv3.text = "起きる"
+        tv2.text = "起きる"
     }
 
     override fun onSelected(year: Int, month: Int, date: Int) {

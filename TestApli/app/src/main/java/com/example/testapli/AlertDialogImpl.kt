@@ -28,7 +28,7 @@ class AlertDialogImpl: DialogFragment() {
         if (context == null)
             return super.onCreateDialog(savedInstanceState)
 
-        val builder = AlertDialog.Builder(this.activity!!).apply {
+        val builder = AlertDialog.Builder(context).apply {
             setMessage("時間になりました！ ")
             setNegativeButton("あと５分") { dialog, which ->
                 context.toast("あと５分がクリックされました。")
