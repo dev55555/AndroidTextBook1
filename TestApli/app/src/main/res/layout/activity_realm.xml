@@ -10,7 +10,8 @@
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Title"
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/et1"
@@ -21,7 +22,8 @@
         android:id="@+id/et1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="text"
         android:text="Titleを入力"
@@ -33,50 +35,60 @@
         android:id="@+id/bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="保存"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/et1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv2"
+    <Button
+        android:id="@+id/bt2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toStartOf="@+id/et1"
+        android:layout_marginEnd="16dp"
+        android:text="検索"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ID"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
 
     <TextView
         android:id="@+id/tv3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TITLE"
         android:textSize="32sp"
-        app:layout_constraintEnd_toStartOf="@+id/bt2"
-        app:layout_constraintStart_toEndOf="@+id/tv2"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
-
-    <Button
-        android:id="@+id/bt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="検索"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv3"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        app:layout_constraintStart_toEndOf="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
 
     <Button
         android:id="@+id/bt3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="削除"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

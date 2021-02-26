@@ -4,7 +4,7 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import java.util.*
 
-open class Schedule: RealmObject() {
+open class ScheduleModel: RealmObject() {
     @PrimaryKey
     var id: Long = 0
     var date: Date = Date()

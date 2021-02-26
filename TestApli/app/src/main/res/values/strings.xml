@@ -126,7 +126,9 @@
     <string name="tv_date">日付のダイアログを表示</string>
     <string name="tv_time">時刻のダイアログを表示</string>
 
-    <string name="bt_sleepOff">スリープオフ</string>
+    <string name="bt_sleepOff">SleepOff</string>
+    <string name="bt_wakeup">１０秒後に画面をONにする</string>
+
     <string name="bt_alarmClockApp">AlarmClockApp</string>
 
     <!-- Text1の１２章の部品化と完成アプリ -->

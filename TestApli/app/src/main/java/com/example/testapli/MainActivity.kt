@@ -2,7 +2,6 @@ package com.example.testapli
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 
@@ -63,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         // １２章
         btRealm.setOnClickListener { startActivity<RealmActivity>() }
         btScheduleApp.setOnClickListener { startActivity<ScheduleActivity>() }
-        btListView.setOnClickListener { startActivity<ListViewActivity>() }
+        btListView.setOnClickListener { startActivity<RealmListViewActivity>() }
 
     }
 }

@@ -24,7 +24,7 @@ class ScheduleEditActivity : AppCompatActivity() {
 
         val scheduleId = intent?.getLongExtra("schedule_id", -1L)
         if (scheduleId != -1L) {
-            val schedule = realm.where<Schedule>()
+            val schedule = realm.where<ScheduleModel>()
                 .equalTo("id", scheduleId).findFirst()
             dateEdit.setText(
                 DateFormat.format("yyyy/MM/dd", schedule?.date))
@@ -39,9 +39,9 @@ class ScheduleEditActivity : AppCompatActivity() {
             when (scheduleId) {
                 -1L -> {
                     realm.executeTransaction {
-                        val maxId = realm.where<Schedule>().max("id")
+                        val maxId = realm.where<ScheduleModel>().max("id")
                         val nextId = (maxId?.toLong() ?: 0L) + 1L
-                        val schedule = realm.createObject<Schedule>(nextId)
+                        val schedule = realm.createObject<ScheduleModel>(nextId)
                         dateEdit.text.toString().toDate("yyyy/MM/dd")?.let {
                             schedule.date = it
                         }
@@ -54,7 +54,7 @@ class ScheduleEditActivity : AppCompatActivity() {
                 }
                 else -> {
                     realm.executeTransaction {
-                        val schedule = realm.where<Schedule>()
+                        val schedule = realm.where<ScheduleModel>()
                             .equalTo("id", scheduleId).findFirst()
                         dateEdit.text.toString().toDate("yyyy/MM/dd")?.let {
                             schedule?.date = it
@@ -71,7 +71,7 @@ class ScheduleEditActivity : AppCompatActivity() {
 
         delete.setOnClickListener{
             realm.executeTransaction {
-                realm.where<Schedule>().equalTo("id", scheduleId)?.findFirst()?.deleteFromRealm()
+                realm.where<ScheduleModel>().equalTo("id", scheduleId)?.findFirst()?.deleteFromRealm()
             }
             alert("削除しました") {
                 yesButton { finish() }

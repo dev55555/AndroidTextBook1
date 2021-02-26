@@ -2,7 +2,6 @@ package com.example.testapli
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import io.realm.Realm
 import kotlinx.android.synthetic.main.content_schedule.*
@@ -18,7 +17,7 @@ class ScheduleActivity : AppCompatActivity() {
 
         realm = Realm.getDefaultInstance()
 
-        val schedules = realm.where(Schedule::class.java).findAll()
+        val schedules = realm.where(ScheduleModel::class.java).findAll()
         listView.adapter = ScheduleAdapter(schedules)
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener {
@@ -26,7 +25,7 @@ class ScheduleActivity : AppCompatActivity() {
         }
 
         listView.setOnItemClickListener { parent, view, position, id ->
-            val schedule = parent.getItemAtPosition(position) as Schedule
+            val schedule = parent.getItemAtPosition(position) as ScheduleModel
             startActivity<ScheduleEditActivity>(
                 "schedule_id" to schedule.id )
         }

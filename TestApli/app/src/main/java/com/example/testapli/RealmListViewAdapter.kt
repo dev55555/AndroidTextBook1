@@ -8,7 +8,7 @@ import android.widget.TextView
 import io.realm.OrderedRealmCollection
 import io.realm.RealmBaseAdapter
 
-class RealmAdapter(data: OrderedRealmCollection<RealmModelSchedule>?):
+class RealmListViewAdapter(data: OrderedRealmCollection<RealmModelSchedule>?):
         RealmBaseAdapter<RealmModelSchedule>(data) {
 
     inner class ViewHolder(cell: View) {
@@ -30,7 +30,7 @@ class RealmAdapter(data: OrderedRealmCollection<RealmModelSchedule>?):
             }
             else -> {
                 view = convertView
-                viewHolder = view.tag as RealmAdapter.ViewHolder
+                viewHolder = view.tag as RealmListViewAdapter.ViewHolder
             }
         }
 

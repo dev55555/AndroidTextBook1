@@ -8,7 +8,7 @@ import android.widget.TextView
 import io.realm.OrderedRealmCollection
 import io.realm.RealmBaseAdapter
 
-class ScheduleAdapter(data: OrderedRealmCollection<Schedule>?) : RealmBaseAdapter<Schedule>(data) {
+class ScheduleAdapter(data: OrderedRealmCollection<ScheduleModel>?) : RealmBaseAdapter<ScheduleModel>(data) {
 
     inner class ViewHolder(cell: View) {
         val date = cell.findViewById<TextView>(android.R.id.text1)

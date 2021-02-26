@@ -13,6 +13,7 @@ import java.util.*
 
 class RealmActivity : AppCompatActivity() {
     private val CLASS_NAME_TAG = "RealmActivity"
+
     private lateinit var realm: Realm
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +25,7 @@ class RealmActivity : AppCompatActivity() {
         // 保存処理
         bt1.setOnClickListener {
             Log.d(CLASS_NAME_TAG, "SAVE")
+            // １件目は、画面からのテキストを保存する
             realm.executeTransaction {
                 val id = 1L
                 val modelSchedule = realm.createObject<RealmModelSchedule>(id)
@@ -39,7 +41,7 @@ class RealmActivity : AppCompatActivity() {
             tv2.text = ""
             tv3.text = ""
 
-            // ２件目
+            // ２件目は、固定値で保存する
             realm.executeTransaction {
                 val id = 2L
                 val modelSchedule = realm.createObject<RealmModelSchedule>(id)
