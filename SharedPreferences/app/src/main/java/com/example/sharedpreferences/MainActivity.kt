@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val pref = getSharedPreferences("file_name", Context.MODE_PRIVATE)
+        val pref = this.getSharedPreferences("file_name", Context.MODE_PRIVATE)
 
         // プリファレンスから、保存されている文字列を取得
         // まだ保存されていない場合は"未登録"を返す
