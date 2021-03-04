@@ -92,11 +92,15 @@ class Realm2Activity : AppCompatActivity() {
         // 一覧検索
         btRealm2ListSearch.setOnClickListener {
             Log.d(LOG_TAG, "一覧検索")
-            realm.executeTransaction {
+//            realm.executeTransaction {
                 val realmResults = realm.where<Realm2Model>().findAll()
-                realm2ListView1.adapter = Realm2ListViewAdapter(this, realmResults.toTypedArray())
+//                // BaseAdapterを継承して作ったAdapter
+//                realm2ListView1.adapter = Realm2ListViewAdapter(this, realmResults.toTypedArray())
+                // RealmBaseAdapterを継承して作ったAdapter
+                realm2ListView1.adapter = Realm2ListViewRealmAdapter(realmResults)
+
                 Log.d(LOG_TAG, "一覧検索の結果の件数：${realmResults.size}")
-            }
+//            }
             Toast.makeText(this, "一覧検索しました。", Toast.LENGTH_SHORT).show()
         }
     }

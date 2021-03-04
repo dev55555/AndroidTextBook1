@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import io.realm.RealmBaseAdapter
 import kotlinx.android.synthetic.main.activity_list_view2.*
 
 class ListView2Activity : AppCompatActivity() {
