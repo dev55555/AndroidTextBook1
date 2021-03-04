@@ -359,10 +359,6 @@
 
             </LinearLayout>
 
-
-
-
-
             <!-- Text1の１２章 -->
             <LinearLayout
                 android:id="@+id/chap12"
@@ -380,28 +376,16 @@
                     android:textSize="16sp" />
 
                 <Button
-                    android:id="@+id/btRealm2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Realm Sample" />
-
-                <Button
                     android:id="@+id/btListView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ListView Sample" />
 
                 <Button
-                    android:id="@+id/btRealm"
+                    android:id="@+id/btRealm2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/bt_realm" />
-
-                <Button
-                    android:id="@+id/btListView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bt_listView" />
+                    android:text="Realm Sample" />
 
                 <Button
                     android:id="@+id/btScheduleApp"
@@ -409,22 +393,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/bt_scheduleApp" />
             </LinearLayout>
-
-
-
-
-
-
-
-
-            <!-- Text1の３章 -->
-
-            <!-- Text1の５章 -->
-
-            <!-- Text1の６章 -->
-
-            <!-- Text1の７章 -->
-
 
         </LinearLayout>
     </ScrollView>

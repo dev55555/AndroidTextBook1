@@ -61,12 +61,9 @@ MainActivity : AppCompatActivity() {
         btAlarmClockApp.setOnClickListener { startActivity<AlarmClockAppActivity>() }
 
         // １２章
-        btRealm2.setOnClickListener { startActivity<Realm2Activity>() }
         btListView2.setOnClickListener { startActivity<ListView2Activity>() }
-        btRealm.setOnClickListener { startActivity<RealmActivity>() }
-        btListView.setOnClickListener { startActivity<ListViewActivity>() }
+        btRealm2.setOnClickListener { startActivity<Realm2Activity>() }
         btScheduleApp.setOnClickListener { startActivity<ScheduleActivity>() }
-
 
     }
 }

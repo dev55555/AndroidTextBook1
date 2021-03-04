@@ -23,6 +23,7 @@ class Realm2Activity : AppCompatActivity() {
 
         realm = Realm.getDefaultInstance()
 
+        // 登録
         btRealm2Resist.setOnClickListener {
             Log.d(LOG_TAG, "登録")
 
@@ -41,6 +42,8 @@ class Realm2Activity : AppCompatActivity() {
             realm2IdEt1.setText("")
             realm2TitleEt1.setText("")
         }
+
+        // 検索
         btRealm2Search.setOnClickListener {
             Log.d(LOG_TAG, "検索")
             realm.executeTransaction {
@@ -62,6 +65,8 @@ class Realm2Activity : AppCompatActivity() {
             }
             Toast.makeText(this, "検索しました。", Toast.LENGTH_SHORT).show()
         }
+
+        // 削除
         btRealm2Delete.setOnClickListener {
             Log.d(LOG_TAG, "削除")
             realm.executeTransaction {
@@ -83,6 +88,8 @@ class Realm2Activity : AppCompatActivity() {
             realm2IdEt2.setText("")
             realm2TitleTv2.text = ""
         }
+
+        // 一覧検索
         btRealm2ListSearch.setOnClickListener {
             Log.d(LOG_TAG, "一覧検索")
             realm.executeTransaction {

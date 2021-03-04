@@ -7,9 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.BaseAdapter
-import android.widget.TextView
+import android.widget.*
 import kotlinx.android.synthetic.main.activity_list_view2.*
 
 class ListView2Activity : AppCompatActivity() {
@@ -34,19 +32,38 @@ class ListView2Activity : AppCompatActivity() {
 
         // ArrayAdapterの実装
         listView21.adapter = ArrayAdapter<String>(this,
-                                                  R.layout.listview21_list,
+                                                  R.layout.listview21_row,
                                                   R.id.listView21IdTitle,
                                                   stringTitleList)
 
         // BaseAdapterの実装
         listView22.adapter = TitleListAdapter(this,  arrayTitleList)
 
+        // リスナーを設定してみる
+        listView22.setOnItemClickListener { parent, view, position, id ->
+            Log.d(LOG_TAG, "setOnItemClickListener | position=${position.toString()} | id=${id.toString()}")
+            Toast.makeText(this,
+                      "position=${position.toString()} | id=${id.toString()}",
+                           Toast.LENGTH_LONG).show()
+        }
+
+        listView22.setOnItemLongClickListener(
+            object : AdapterView.OnItemLongClickListener{
+                override fun onItemLongClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long): Boolean {
+                    Log.d(LOG_TAG, "setOnItemLongClickListener | position=${position.toString()} | id=${id.toString()}")
+                    Toast.makeText(applicationContext,
+                            "position=${position.toString()} | id=${id.toString()}",
+                            Toast.LENGTH_LONG).show()
+                    return true
+                }
+            }
+        )
+
     }
 }
 
 
 class TitleList(val id : Long, val title : String) {
-
     override fun toString(): String {
         return "id=${id.toString()} | title=${title}"
     }
@@ -81,7 +98,7 @@ class TitleListAdapter(val context : Context, val titleLists : Array<TitleList>)
     }
 
     private fun createView(parent: ViewGroup?) : View {
-        val view = inflater.inflate(R.layout.listview22_list, parent, false)
+        val view = inflater.inflate(R.layout.listview22_row, parent, false)
         view.tag = ViewHolder(view)
         return view
     }

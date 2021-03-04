@@ -26,7 +26,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView2Tv1"
-        tools:listitem="@layout/listview21_list">
+        tools:listitem="@layout/listview21_row">
 
     </ListView>
 
@@ -49,5 +49,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView2Tv2"
-        tools:listitem="@layout/listview22_list" />
+        tools:listitem="@layout/listview22_row" />
 </androidx.constraintlayout.widget.ConstraintLayout>
