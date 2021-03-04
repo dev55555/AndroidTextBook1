@@ -380,6 +380,18 @@
                     android:textSize="16sp" />
 
                 <Button
+                    android:id="@+id/btRealm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Realm Sample" />
+
+                <Button
+                    android:id="@+id/btListView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ListView Sample" />
+
+                <Button
                     android:id="@+id/btRealm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

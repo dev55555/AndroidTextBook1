@@ -5,7 +5,8 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 
-class MainActivity : AppCompatActivity() {
+class
+MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -60,9 +61,12 @@ class MainActivity : AppCompatActivity() {
         btAlarmClockApp.setOnClickListener { startActivity<AlarmClockAppActivity>() }
 
         // １２章
+        btRealm2.setOnClickListener { startActivity<Realm2Activity>() }
+        btListView2.setOnClickListener { startActivity<ListView2Activity>() }
         btRealm.setOnClickListener { startActivity<RealmActivity>() }
+        btListView.setOnClickListener { startActivity<ListViewActivity>() }
         btScheduleApp.setOnClickListener { startActivity<ScheduleActivity>() }
-        btListView.setOnClickListener { startActivity<RealmListViewActivity>() }
+
 
     }
 }

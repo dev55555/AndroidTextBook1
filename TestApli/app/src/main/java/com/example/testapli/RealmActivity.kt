@@ -25,9 +25,9 @@ class RealmActivity : AppCompatActivity() {
         // 保存処理
         bt1.setOnClickListener {
             Log.d(CLASS_NAME_TAG, "SAVE")
-            // １件目は、画面からのテキストを保存する
+            // 画面からのテキストを保存する
             realm.executeTransaction {
-                val id = 1L
+                val id = et2.text.toString().toLong()
                 val modelSchedule = realm.createObject<RealmModelSchedule>(id)
                 modelSchedule.date = Date("2022/01/01")
                 modelSchedule.title = et1.text.toString()
@@ -38,17 +38,9 @@ class RealmActivity : AppCompatActivity() {
                 }
             }.show()
             et1.setText("")
+            et2.setText("")
             tv2.text = ""
             tv3.text = ""
-
-            // ２件目は、固定値で保存する
-            realm.executeTransaction {
-                val id = 2L
-                val modelSchedule = realm.createObject<RealmModelSchedule>(id)
-                modelSchedule.date = Date("2022/01/02")
-                modelSchedule.title = "２件目"
-                modelSchedule.detail = "詳細"
-            }
         }
 
         // 検索
@@ -61,16 +53,21 @@ class RealmActivity : AppCompatActivity() {
                 tv3.text = modelSchedule.title
             } else {
                 et1.setText("")
+                et2.setText("")
                 tv2.text = ""
                 tv3.text = ""
             }
         }
 
         // 削除
+        // 検索した１件のみを削除する
         bt3.setOnClickListener {
             Log.d(CLASS_NAME_TAG, "DELETE")
+
+            val id = tv2.text.toString().toLong()
+
             realm.executeTransaction {
-                val modelSchedule = realm.where<RealmModelSchedule>().findAll()
+                val modelSchedule = realm.where<RealmModelSchedule>().equalTo("id", id).findAll()
                 if(modelSchedule != null) {
                     Log.d(CLASS_NAME_TAG, "")
                     modelSchedule.deleteFirstFromRealm()
@@ -81,6 +78,7 @@ class RealmActivity : AppCompatActivity() {
                 }
             }.show()
             et1.setText("")
+            et2.setText("")
             tv2.text = ""
             tv3.text = ""
         }

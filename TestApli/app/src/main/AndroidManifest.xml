@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApli">
-        <activity android:name=".SharedPreferenceActivity"></activity>
+        <activity android:name=".ListView2Activity"></activity>
+        <activity android:name=".Realm2Activity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
         <activity android:name=".IntentNextActivity" />
         <activity android:name=".IntentActivity" />
         <activity android:name=".MySizeInputActivity" />
@@ -25,7 +28,6 @@
         <activity android:name=".ScrollView2Activity" />
         <activity android:name=".LinearLayoutActivity" />
         <activity android:name=".ScrollViewActivity" />
-        <activity android:name=".RealmListViewActivity" />
         <activity android:name=".RealmActivity" />
         <activity android:name=".ScheduleEditActivity" />
         <activity
