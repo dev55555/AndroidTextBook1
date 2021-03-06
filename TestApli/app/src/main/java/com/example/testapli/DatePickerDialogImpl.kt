@@ -4,6 +4,7 @@ import android.app.DatePickerDialog
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import java.util.*
@@ -33,6 +34,7 @@ class DatePickerDialogImpl: DialogFragment(),
     }
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
+        Log.d("TAG","カレンダーのOKがクリックされた。")
         listener.onSelected(year, month, dayOfMonth)
     }
 }

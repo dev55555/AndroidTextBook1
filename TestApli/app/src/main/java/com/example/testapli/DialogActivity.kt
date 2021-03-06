@@ -37,10 +37,10 @@ class DialogActivity : AppCompatActivity()
 
     }
     override fun onNegativeClick() {
-        tv1.text = "あと５分"
+        tv1.text = "Negative Button"
     }
     override fun onPositiveClick() {
-        tv2.text = "起きる"
+        tv2.text = "Positive Button"
     }
 
     override fun onSelected(year: Int, month: Int, date: Int) {

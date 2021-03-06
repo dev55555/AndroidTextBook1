@@ -18,11 +18,9 @@ class ContextMenuActivity : AppCompatActivity() {
     }
 
     // コンテキストメニューの作成
-    override fun onCreateContextMenu(
-        menu: ContextMenu?,
-        v: View?,
-        menuInfo: ContextMenu.ContextMenuInfo?
-    ) {
+    override fun onCreateContextMenu(menu: ContextMenu?, v: View?,
+                                     menuInfo: ContextMenu.ContextMenuInfo?)
+    {
         super.onCreateContextMenu(menu, v, menuInfo)
         menuInflater.inflate(R.menu.context_menu, menu)
     }
